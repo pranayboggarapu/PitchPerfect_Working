@@ -50,7 +50,7 @@ class PlaySoundsViewController: UIViewController {
         configureUI(.notPlaying)
     }
     
-    //MARK: Play sound once the button is clicked
+    //MARK:- Play sound once the button is clicked
     @IBAction func playSoundForButton(_ sender: UIButton){
         switch(ButtonType(rawValue: sender.tag)!){
         case .slow:

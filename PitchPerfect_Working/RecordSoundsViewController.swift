@@ -31,7 +31,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         
     }
 
-    //MARK: Function to record the audio
+    //MARK:- Function to record the audio
     @IBAction func recordAudio(_ sender: Any) {
         
         //MARK: changing the button states and the title
@@ -58,7 +58,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         
     }
     
-    //MARK: FUnction to stop recording
+    //MARK:- FUnction to stop recording
     @IBAction func stopRecording(_ sender: Any) {
         
         //MARK: Changing the button states and label
@@ -71,7 +71,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         
     }
     
-    //MARK: segue function for next screen
+    //MARK:- segue function for next screen
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
         if flag {
             performSegue(withIdentifier: "stopRecording", sender: audioRecorder.url)
